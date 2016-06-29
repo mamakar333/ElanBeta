@@ -155,7 +155,7 @@ a img {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+    color: white;
 }
 
 
@@ -265,7 +265,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_bg.gif) no-repeat center top;
+	background: url(../img/web.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
