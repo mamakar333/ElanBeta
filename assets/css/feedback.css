@@ -1,0 +1,103 @@
+body{
+  background-image: url('assets/img/feedback_bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('assets/fonts/soria-font.ttf');
+}
+
+
+.btn{
+  background-color: #14B9D5;
+}
+label,h2{
+  font-family: myFirstFont;
+}
+
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* set global font to Open Sans */
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  background-image: url(http://benague.ca/files/pw_pattern.png);
+}
+
+/* css for title */
+h1 {
+  color: #55acee;
+  text-align: center;
+}
+
+.link {
+  border-bottom: 2px dotted #55acee;
+  text-decoration: none;
+  color: #55acee;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+
+.link:hover {
+  color: #2ecc71;
+  border-bottom: 2px dotted #2ecc71;
+}
+
+/* css for the shiny buttons */
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+}
+
+.purple {
+  color: #9b59b6;
+  border: 2px #9b59b6 solid;
+}
+
+.purple:hover {
+  color: #fff;
+  background-color: #9b59b6;
+}
+
+
+.red {
+  color: #e74c3c;
+  border: 2px #e74c3c solid;
+}
+
+.red:hover {
+  color: #fff;
+  background-color: #e74c3c;
+}
+.text-center.col-md-5.col-md-offset-3{
+  background-color: gray;
+}
+.error{
+  color:#C0C0C0;
+}
+select{
+  background-color: white;
+}
+input,textarea,select{
+  border-radius: 10px;
+}
+input:hover,textarea:hover,select:hover{
+  border:5px solid;
+    border-color:darkseagreen;
+    border-radius: 10em;
+     box-shadow: 0px 0px 20px 12px #82E0FF;
+}

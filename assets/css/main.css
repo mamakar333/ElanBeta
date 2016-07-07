@@ -275,7 +275,7 @@ a:after {
 	width: 100%;
   height: 100%;
 
-    
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -302,13 +302,7 @@ a:after {
 	margin-left: 15px;
 	text-shadow: 1px 1px 1px #000;
 }
-#downButton:hover{
-color:#3498DB;
-opacity: 0.8;
-}
-#downButton:visited{
-color:#3498DB;
-}
+
 
 
 #greywrap {
@@ -632,4 +626,22 @@ color:#3498DB;
 		font-size: 30px;
 		line-height: 38px;
 	}
+}
+
+#arrow{
+  position: absolute;
+  left: 94%;
+  top: 40%;
+  font-size: 3.5em;
+}
+
+#downButton:hover{
+color:#3498DB;
+opacity: 0.7;
+}
+#downButton:visited{
+color:#3498DB;
+}
+#downButton:active{
+color:#3498DB;
 }

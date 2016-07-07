@@ -12,15 +12,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+ 
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
+	
     <!-- Custom CSS-->
     <link href="css/general.css" rel="stylesheet">
-
+	
 	 <!-- Owl-Carousel -->
     <link href="css/custom.css" rel="stylesheet">
 	<link href="css/owl.carousel.css" rel="stylesheet">
@@ -28,17 +28,17 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
     <link rel='shortcut icon' href='img/elan.jpg' type='image/x-icon'/ >
-
+	
 	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	<style>
 		body{
 			background: url("img/gallery_back.jpg");
 
 		}
 	</style>
-
-	<script src="js/modernizr-2.8.3.min.js"></script>
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  
 </head>
 
 <body id="home">
@@ -47,7 +47,7 @@
 	<div id="preloader">
 		<div id="status"></div>
 	</div>
-
+	
 	<!-- Screenshot -->
 	<div id="screen" class="content-section-b">
         <div class="container">
@@ -59,37 +59,37 @@
 		  </div>
 		    <div class="row wow bounceInUp" >
               <div id="owl-demo" class="owl-carousel">
-
+				
 				<a href="img/slide/1.png" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
 					</div>
 				</a>
-
+				
                <a href="img/slide/2.png" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
 					</div>
 				</a>
-
+				
 				<a href="img/slide/3.png" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
 					</div>
 				</a>
-
+				
 				<a href="img/slide/4.jpg" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/4.jpg" alt="Owl Image">
 					</div>
 				</a>
-
+				
                <a href="img/slide/5.jpg" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/5.jpg" alt="Owl Image">
 					</div>
 				</a>
-
+				
 				<a href="img/slide/6.jpg" class="image-link">
 					<div class="item">
 						<img  class="img-responsive img-rounded" src="img/slide/6.jpg" alt="Owl Image">
@@ -111,7 +111,7 @@
 						<img  class="img-responsive img-rounded" src="img/slide/9.jpg" alt="Owl Image">
 					</div>
 				</a>
-              </div>
+              </div>       
           </div>
         </div>
 
@@ -123,7 +123,7 @@
 
 
 	<!-- Banner Download -->
-
+	
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
@@ -136,13 +136,13 @@
 	  jQuery(function($) {
 		$(document).ready( function() {
 		  $('.navbar-default').stickUp();
-
+		  
 		});
 	  });
-
+	
 	</script>
 	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script>
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
 	<script src="js/wow.min.js"></script>
 	<script>
 	 new WOW().init();
@@ -150,7 +150,7 @@
 	<script src="js/classie.js"></script>
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script> 
 </body>
 
 </html>
