@@ -1,24 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elan 2017 Beta Website">
-    <meta name="author" content="harsh" >
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-    <title>Workshop</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel='shortcut icon' href='assets/img/elan.jpg' type='image/x-icon'/ >
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+<link rel='shortcut icon' href='assets/img/elan.jpg' type='image/x-icon'/ >
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery-ui.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="assets/css/feedback.css">
 
+<title>Workshops</title>
+</head>
+<body style="background-image:url('assets/img/bg/gplay.png')">
+  <br><br>
+  <div class="container container-table">
+    <div class="row vertical-center-row">
+      <div class="text-center col-md-5 col-md-offset-3">
+<h1 id="title" style="margin-left:21%;">Workshops</h1>
+</div>
+</div>
+</div>
+<br>
 
-  </head>
-  <body style="  background-image: url('assets/img/feedback_bg.jpg');">
-    <div class="container">
-  <div class="jumbotron">
-    <h1>Workshops</h1>
-    <p>Coming Soon.</p>
+<div class="container container-table">
+  <div class="row vertical-center-row">
+    <div class="text-center col-md-6 col-md-offset-2" id="data" style="margin-left:24%;">
+      <h2 id="title2" style="margin-left:4%;">Coming Soon</h2>
+      <hr>
+          <br><br>
+     </div>
   </div>
- </div>
+</div>
 
-  </body>
+
+</body>
+<script type="text/javascript" src="assets/js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.js">  </script>
+
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
+  });
+
+
+</script>
 </html>

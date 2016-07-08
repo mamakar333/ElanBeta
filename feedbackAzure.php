@@ -164,12 +164,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $answer =  '<div class="alert alert-warning">
       <strong>
       Thank You For Your Valuable Feedback.
+      <br><br>
+      <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
       </strong>
     </div>';
     else
     $answer = '<div class="alert alert-danger">
       <strong>
       Some Error Occured While Sending Feedback.
+      <br><br>
+      <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
       </strong>
     </div>';
 
@@ -183,6 +187,7 @@ function test_input($data) {
   return $data;
 }
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -194,104 +199,98 @@ function test_input($data) {
 <link rel="stylesheet" href="assets/css/jquery-ui.css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="assets/css/feedback.css">
 
-<title>Feedback Azure Skyne</title>
+<title>Feedback Azure Skynet Workshop</title>
 </head>
-<body style="background-image: url('assets/img/feedback_bg.jpg');">
-
+<body style="background-image:url('assets/img/bg/gplay.png')">
+  <br><br>
+  <div class="container container-table">
+    <div class="row vertical-center-row">
+      <div class="text-center col-md-5 col-md-offset-3">
+<h1 id="title" style="margin-left:21%;">Azure Skynet Workshop Feedback Form</h1>
+</div>
+</div>
+</div>
+<br>
 
 <div class="container container-table">
   <div class="row vertical-center-row">
-    <div class="text-center col-md-5 col-md-offset-3">
-      <h2>AZURE SKYNET WORKSHOP FEEDBACK FORM</h2>
+    <div class="text-center col-md-6 col-md-offset-2" id="data" style="margin-left:24%;">
+      <h2 id="title2">Please Give Your Valuable FeedBack</h2>
       <hr>
       <p><span class="error"></span></p>
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="form-inline">
 
-        <fieldset div="container-fluid">
-          <div class="row">
-            <label class="control-label col-sm-2" for="usr">Name:</label>
-            <input type="text" class="col-sm-9" id="usr" name="name" value="<?php echo $name;?>" required>
+        <label class="control-label" for="usr">Name:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="usr" name="name"  required>
+            <span class="input-group-addon" ><span class="glyphicon glyphicon-user"></span></span>
+            </div>
             <span class="error"> <?php echo $nameErr;?></span>
-          </div>
-        </fieldset>
 
 
         <br><br>
 
-        <fieldset div="container-fluid">
-          <div class="row">
-            <label class="control-label col-sm-2" for="usr">College:</label>
-            <input type="text" class="col-sm-9" id="usr" name="college" value="<?php echo $college;?>" required>
-            <span class="error"> <?php echo $collegeErr;?></span>
+        <label class="control-label" for="usr">College:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="usr" name="college"  required>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-tower"></span></span>
           </div>
-        </fieldset>
+          <span class="error"> <?php echo $collegeErr;?></span>
 
 
         <br><br>
 
-        <fieldset div="container-fluid">
-          <div class="row">
-            <label class="control-label col-sm-4" for="usr">Date Of Workshop:</label>
-            <input type="text" class="col-sm-7" id="datepicker" name="dateOfWorkshop" value="<?php echo $dateOfWorkshop;?>" required>
-            <span class="error" > <?php echo $dateOfWorkshopErr;?></span>
+        <label class="control-label" for="usr">Date Of Workshop:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="datepicker" name="dateOfWorkshop"  required>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
           </div>
-        </fieldset>
+          <span class="error" > <?php echo $dateOfWorkshopErr;?></span>
 
 
          <br><br>
 
-         <fieldset div="container-fluid">
-           <div class="row">
-             <label class="control-label col-sm-5" for="usr">College Where Workshop Was Conducted:</label>
-             <input type="text" class="col-sm-6" id="usr" name="collegeWhere" value="<?php echo $collegeWhere;?>" required>
-             <span class="error" > <?php echo $collegeWhereErr;?></span>
+         <label class="control-label" for="usr">College Where Workshop Was Conducted:</label>
+         <div class="input-group">
+             <input type="text" class="form-control" id="usr" name="collegeWhere" required>
+             <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
            </div>
-         </fieldset>
-
+           <span class="error" > <?php echo $collegeWhereErr;?></span>
 
 
         <br>
 
-        <fieldset div="container-fluid">
-          <div class="row">
-            <label class="control-label col-sm-3" for="usr">Contact No.:</label>
-            <input type="number" class="col-sm-8" id="usr" name="contact" value="<?php echo $contact;?>" required>
-            <span class="error"> <?php echo $contactErr;?></span>
+        <label class="control-label" for="usr">Contact No.:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="usr" name="contact"  required>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
           </div>
-        </fieldset>
+          <span class="error"> <?php echo $contactErr;?></span>
+
 
       <br><br>
 
-
-      <fieldset div="container-fluid">
-        <div class="row">
-          <label class="control-label col-sm-2" for="usr">&nbsp;E-mail:</label>
-          <input type="email" class="col-sm-8" id="usr" name="email" value="<?php echo $email;?>" required>
-          <span class="error"> <?php echo $emailErr;?></span>
+      <label class="control-label" for="usr">E-mail:</label>
+      <div class="input-group">
+          <input type="email" class="form-control" id="usr" name="email" required >
+          <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
         </div>
-      </fieldset>
-
+        <span class="error"> <?php echo $emailErr;?></span>
 
 
 
         <br><br>
-
-        <fieldset div="container-fluid">
-          <div class="row">
-            <label class="control-label col-sm-3" for="comment">Comments : </label>
-            <textarea class="col-sm-8" rows="4" id="comment" name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-          </div>
-        </fieldset>
-
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment" cols="40"><?php echo $comment;?></textarea>
+        </div>
 
 
          <br><br>
 
-         <fieldset div="container-fluid">
-           <label class="control-label col-sm-4" for="sel1">Rate Out Of 10: </label>
-
-           <div class="row select_style">
-             <select class="col-sm-7" id="sel1" name="rate" >
+         <div class="form-group">
+           <label for="sel1">Rate Out Of 10:</label>
+  <select class="form-control" id="sel1" name="rate" >
                <option value="10">10</option>
                <option value="9">9</option>
                <option value="8">8</option>
@@ -304,14 +303,15 @@ function test_input($data) {
                <option value="1">1</option>
              </select>
             </div>
-         </fieldset>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-1"></div>
-              <input type="submit" name="submit" value="Submit" class="btn red col-sm-3">
+            <br><br><br>
+            <div class="container container-table">
+              <div class="row vertical-center-row">
+                <div class="text-center col-md-8 col-md-offset-1" style="margin-left:13%;">
+                  <input type="submit" name="submit" value="Submit" class="btn btn-warning col-sm-3">
+                  </div>
+              </div>
             </div>
-          </div>
+
 
       </form>
       <br><br>
@@ -319,7 +319,7 @@ function test_input($data) {
 
 
           <?php
-        echo $answer;
+         echo $answer;
         ?>
 
 
@@ -336,10 +336,12 @@ function test_input($data) {
 
 <script>
   $(function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({
+          dateFormat: 'dd-mm-yy'
+        });
   });
-  $("select").val("<?php echo $rate;?>").change();;
 
 
 </script>
 </html>
+ 

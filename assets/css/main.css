@@ -22,6 +22,8 @@ body {
  * Customize the background color to match your design.
  */
 
+
+
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -67,7 +69,10 @@ body {
 /* ==========================================================================
    General styles
    ========================================================================== */
-
+   @font-face {
+       font-family: RalewayMedium;
+       src: url('../fonts/Raleway-Medium.ttf');
+   }
 html,
 body {
     height: 100%;
@@ -629,11 +634,12 @@ a:after {
 }
 
 #arrow{
-  position: absolute;
-  left: 94%;
-  top: 40%;
-  font-size: 3.5em;
-}
+  position: absolute;;
+  bottom:5%;
+    right:25%;
+    left:47%;
+
+ }
 
 #downButton:hover{
 color:#3498DB;
@@ -645,3 +651,4 @@ color:#3498DB;
 #downButton:active{
 color:#3498DB;
 }
+%
