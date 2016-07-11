@@ -243,7 +243,7 @@ function test_input($data) {
         <label class="control-label" for="usr">Date Of Workshop:</label>
         <div class="input-group">
             <input type="text" class="form-control" id="datepicker" name="dateOfWorkshop"  required>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
           </div>
           <span class="error" > <?php echo $dateOfWorkshopErr;?></span>
 
@@ -344,4 +344,3 @@ function test_input($data) {
 
 </script>
 </html>
- 
