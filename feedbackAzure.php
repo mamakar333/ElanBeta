@@ -202,7 +202,75 @@ function test_input($data) {
 <title>Feedback Azure Skynet Workshop</title>
 </head>
 <body style="background-image:url('assets/img/bg/gplay.png')">
-  <br><br>
+
+
+
+  <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;">
+          </span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html#home" class="smoothScroll"> Home
+            </a>
+          </li>
+          <li>
+            <a href="./index.html#about" class="smoothScroll"> About
+            </a>
+          </li>
+          <li>
+            <a href="./index.html#services" class="smoothScroll"> Hospitality
+            </a>
+          </li>
+
+      <li>
+            <a href="./index.html#Portfolio" class="smoothScroll"> Events
+            </a>
+          </li>
+          <li>
+            <a href="./index.html#workshop" class="smoothScroll" >Workshops
+            </a>
+          </li>
+          <li>
+            <a href="./Sponsors.html" target="_blank" >Previous Sponsors
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Feedback
+              <span class="caret">
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./feedbackElan.php" target="_self">Elan Workshop
+                </a>
+              </li>
+              <li>
+                <a href="./feedbackAzure.php" target="_self">Azure Skynet Workshop
+                </a>
+              </li>
+              <li>
+                <a href="./feedbackEntrench.php" target="_self">Entrench Electronics Workshop
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <br><br><br><br><br>
   <div class="container container-table">
     <div class="row vertical-center-row">
       <div class="text-center col-md-5 col-md-offset-3">
