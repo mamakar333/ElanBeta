@@ -188,6 +188,8 @@ function test_input($data) {
 }
 ?>
 
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -203,198 +205,204 @@ function test_input($data) {
 </head>
 <body style="background-image:url('assets/img/bg/gplay.png')">
 
-
-
   <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse" id="icon123">
+          <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;float:right;">
           </span>
         </button>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="./index.html#home" class="smoothScroll"> Home
-            </a>
+          <li><a href=index.html class=smoothScroll> Home</a></li>
+          <li><a href=index.html#about class=smoothScroll> About</a></li>
+          <li><a href=index.html#services class=smoothScroll> Hospitality</a></li>
+          <li><a href=index.html#Portfolio class=smoothScroll> Events</a></li>
+          <li><a href=index.html#workshop class=smoothScroll>Workshops</a></li>
+          <li><a href=index.html#blog class=smoothscroll>Glimpses</a></li>
+          <li><a href=team.html target=_self> Team</a></li>
+          <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+          <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
+          <li class="dropdown active">
+             <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+             <ul class=dropdown-menu>
+                <li><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
+                <li ><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                <li class="active"><a href=feedbackEntrench.php target=_self>Entrench Electronics Workshop</a></li>
+             </ul>
           </li>
-          <li>
-            <a href="./index.html#about" class="smoothScroll"> About
-            </a>
-          </li>
-          <li>
-            <a href="./index.html#services" class="smoothScroll"> Hospitality
-            </a>
-          </li>
-
-      <li>
-            <a href="./index.html#Portfolio" class="smoothScroll"> Events
-            </a>
-          </li>
-          <li>
-            <a href="./index.html#workshop" class="smoothScroll" >Workshops
-            </a>
-          </li>
-          <li>
-            <a href="./Sponsors.html" target="_blank" >Previous Sponsors
-            </a>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Feedback
-              <span class="caret">
-              </span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="./feedbackElan.php" target="_self">Elan Workshop
-                </a>
-              </li>
-              <li>
-                <a href="./feedbackAzure.php" target="_self">Azure Skynet Workshop
-                </a>
-              </li>
-              <li>
-                <a href="./feedbackEntrench.php" target="_self">Entrench Electronics Workshop
-                </a>
-              </li>
-            </ul>
-          </li>
-
         </ul>
       </div>
     </div>
   </nav>
+  <nav class="navbar navbar-default ">
+  </nav>
 
+  <br>
+
+
+<table class="table" width="300">
+
+  <tbody>
+    <tr>
+      <td style="border:none;" width="100">&nbsp;</td>
+      <td style="border:none;"  width="100">
+        <div class="container container-table">
+          <div class="row vertical-center-row">
+            <div class="text-center col-md-6 col-md-offset-3">
+      <h1 id="title" >Entrench Electronics Workshop Feedback Form</h1>
+    </div><!-- style="margin-left:21%;" -->
+          </div>
+        </div>
+      </td>
+      <td style="border:none;" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border:none;" width="100">&nbsp;</td>
+      <td style="border:none;"  width="100">
+        <div class="container container-table">
+          <div class="row vertical-center-row">
+            <div class="text-center col-md-7 col-md-offset-2" id="data">
+              <h2 id="title2">Please Give Your Valuable FeedBack</h2>
+              <hr>
+              <p><span class="error"></span></p>
+              <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="form-inline" name="feedback">
+
+                <label class="control-label" for="usr">Name:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="usr" name="name" value="<?php echo $name; ?>" required>
+                    <span class="input-group-addon" ><span class="glyphicon glyphicon-user"></span></span>
+                    </div>
+                    <span class="error"> <?php echo $nameErr;?></span>
+
+
+                <br><br>
+
+                <label class="control-label" for="usr">College:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="usr" name="college" value="<?php echo $college; ?>" required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-tower"></span></span>
+                  </div>
+                  <span class="error"> <?php echo $collegeErr;?></span>
+
+
+                <br><br>
+
+                <label class="control-label" for="usr">Date Of Workshop:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="datepicker" name="dateOfWorkshop" value="<?php echo $dateOfWorkshop; ?>" required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                  </div>
+                  <span class="error" > <?php echo $dateOfWorkshopErr;?></span>
+
+
+                 <br><br>
+
+                 <label class="control-label" for="usr">College Where Workshop Was Conducted:</label>
+                 <div class="input-group">
+                     <input type="text" class="form-control" id="usr" name="collegeWhere" value="<?php echo $collegeWhere; ?>" required>
+                     <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+                   </div>
+                   <span class="error" > <?php echo $collegeWhereErr;?></span>
+
+
+                <br>
+
+                <label class="control-label" for="usr">Contact No.:</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="usr" name="contact" value="<?php echo $contact; ?>" required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                  </div>
+                  <span class="error"> <?php echo $contactErr;?></span>
+
+
+              <br><br>
+
+              <label class="control-label" for="usr">E-mail:</label>
+              <div class="input-group">
+                  <input type="email" class="form-control" id="usr" name="email" value="<?php echo $email; ?>" required >
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                </div>
+                <span class="error"> <?php echo $emailErr;?></span>
+
+
+                <br><br>
+
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="5" id="comment" cols="40"><?php echo $comment;?></textarea>
+                </div>
+
+                 <br><br>
+
+                 <div class="form-group">
+                   <label for="sel1">Rate Out Of 10:</label>
+          <select class="form-control" id="sel1" name="rate" >
+                       <option value="10">10</option>
+                       <option value="9">9</option>
+                       <option value="8">8</option>
+                       <option value="7">7</option>
+                       <option value="6">6</option>
+                       <option value="5">5</option>
+                       <option value="4">4</option>
+                       <option value="3">3</option>
+                       <option value="2">2</option>
+                       <option value="1">1</option>
+                     </select>
+                    </div>
+                    <br><br><br>
+                    <a href="" onclick="document.feedback.submit();return false;">
+                                        <div class="button-fill orange">
+                        <div class="button-text">Register</div>
+                        <div class="button-inside">
+                          <div class="inside-text">Register</div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- </button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSft2xODbmH5AeVDJz6mMlUId1XMU0s7L68hI1ue0a6FkWfNrA/viewform" target="_blank">
+
+                             </a> -->
+                    <!-- <div class="container container-table">
+                      <div class="row vertical-center-row">
+                        <div class="text-center col-md-8 col-md-offset-1" style="margin-left:13%;">
+                          <input type="submit" name="submit" value="Submit" class="btn btn-warning col-sm-3">
+                          </div>
+                      </div>
+                    </div> -->
+
+
+              </form>
+              <br><br>
+
+                  <?php
+                 echo $answer;
+                ?>
+      </td>
+      <td style="border:none;" width="100">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+<!--
 
 
   <br><br><br><br><br>
   <div class="container container-table">
     <div class="row vertical-center-row">
       <div class="text-center col-md-5 col-md-offset-3">
-<h1 id="title" style="margin-left:21%;">Entrench Electronics Workshop Feedback Form</h1>
+<h1 id="title" style="margin-left:21%;">Elan Workshop Feedback Form</h1>
 </div>
 </div>
 </div>
 <br>
-
-<div class="container container-table">
-  <div class="row vertical-center-row">
-    <div class="text-center col-md-6 col-md-offset-2" id="data" style="margin-left:24%;">
-      <h2 id="title2">Please Give Your Valuable FeedBack</h2>
-      <hr>
-      <p><span class="error"></span></p>
-      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="form-inline">
-
-        <label class="control-label" for="usr">Name:</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="usr" name="name"  required>
-            <span class="input-group-addon" ><span class="glyphicon glyphicon-user"></span></span>
-            </div>
-            <span class="error"> <?php echo $nameErr;?></span>
-
-
-        <br><br>
-
-        <label class="control-label" for="usr">College:</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="usr" name="college"  required>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-tower"></span></span>
-          </div>
-          <span class="error"> <?php echo $collegeErr;?></span>
-
-
-        <br><br>
-
-        <label class="control-label" for="usr">Date Of Workshop:</label>
-        <div class="input-group">
-            <input type="text" class="form-control" id="datepicker" name="dateOfWorkshop"  required>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-          </div>
-          <span class="error" > <?php echo $dateOfWorkshopErr;?></span>
-
-
-         <br><br>
-
-         <label class="control-label" for="usr">College Where Workshop Was Conducted:</label>
-         <div class="input-group">
-             <input type="text" class="form-control" id="usr" name="collegeWhere" required>
-             <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
-           </div>
-           <span class="error" > <?php echo $collegeWhereErr;?></span>
-
-
-        <br>
-
-        <label class="control-label" for="usr">Contact No.:</label>
-        <div class="input-group">
-            <input type="number" class="form-control" id="usr" name="contact"  required>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
-          </div>
-          <span class="error"> <?php echo $contactErr;?></span>
-
-
-      <br><br>
-
-      <label class="control-label" for="usr">E-mail:</label>
-      <div class="input-group">
-          <input type="email" class="form-control" id="usr" name="email" required >
-          <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-        </div>
-        <span class="error"> <?php echo $emailErr;?></span>
-
-
-
-        <br><br>
-        <div class="form-group">
-          <label for="comment">Comment:</label>
-          <textarea class="form-control" rows="5" id="comment" cols="40"><?php echo $comment;?></textarea>
-        </div>
-
-
-         <br><br>
-
-         <div class="form-group">
-           <label for="sel1">Rate Out Of 10:</label>
-  <select class="form-control" id="sel1" name="rate" >
-               <option value="10">10</option>
-               <option value="9">9</option>
-               <option value="8">8</option>
-               <option value="7">7</option>
-               <option value="6">6</option>
-               <option value="5">5</option>
-               <option value="4">4</option>
-               <option value="3">3</option>
-               <option value="2">2</option>
-               <option value="1">1</option>
-             </select>
-            </div>
-            <br><br><br>
-            <div class="container container-table">
-              <div class="row vertical-center-row">
-                <div class="text-center col-md-8 col-md-offset-1" style="margin-left:13%;">
-                  <input type="submit" name="submit" value="Submit" class="btn btn-warning col-sm-3">
-                  </div>
-              </div>
-            </div>
-
-
-      </form>
-      <br><br>
-
-
-
-          <?php
-         echo $answer;
-        ?>
-
-
-
-     </div>
-  </div>
-</div>
+-->
 
 
 </body>
@@ -407,8 +415,12 @@ function test_input($data) {
     $( "#datepicker" ).datepicker({
           dateFormat: 'dd-mm-yy'
         });
+        $(".button-fill").hover(function() {
+          $(this).children(".button-inside").addClass('full');
+        }, function() {
+          $(this).children(".button-inside").removeClass('full');
+        });
+        $("#sel1").val('<?php echo $rate; ?>');
   });
-
-
 </script>
 </html>

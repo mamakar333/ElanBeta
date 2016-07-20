@@ -117,7 +117,7 @@ display: none;
 }
 </style>
 <style type="text/css">
-#nav-toggle {
+/*#nav-toggle {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -156,7 +156,7 @@ display: none;
 }
 #nav-toggle.active span:after {
 	transform: rotate(-45deg);
-}
+}*/
 .contain {
 	position: absolute;
 	top: 2%;
@@ -176,15 +176,45 @@ display: none;
 .box:hover {
 	background-color: #aaa;
 }
-/*
-a img{
-  border:0px solid;
-    border-color:darkseagreen;
-    border-radius: 1em;
-     box-shadow: 0px 0px 20px 12px #C0C0C0;
-}*/
+@media (max-width:992px){
+.navbar-header {
+    float: none;
+}
+.navbar-left,.navbar-right {
+    float: none ;//!important;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+ }
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+ }
+
+ .navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.collapse.in{
+    display:block !important;
+}
+}
 img:not(#logo) {
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 10px black;
 
 }
 
@@ -192,79 +222,60 @@ img:not(#logo) {
 
 
 </style>
+<style media="screen">
+/*.col-xs-12.col-sm-4 h3{
+  color: red;
+}
+.row h3 , #food , #online ,h1{
+  color: red;
+}*/
+.container{
+  color:black;
+}
+
+</style>
 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
 <body >
-  <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;">
-          </span>
-        </button>
+  <div class="back_cover">
+
+    <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse" id="icon123">
+            <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;float:right;">
+            </span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav">
+            <li><a href=index.html class=smoothScroll> Home</a></li>
+            <li><a href=index.html#about class=smoothScroll> About</a></li>
+            <li><a href=index.html#services class=smoothScroll> Hospitality</a></li>
+            <li><a href=index.html#Portfolio class=smoothScroll> Events</a></li>
+            <li><a href=index.html#workshop class=smoothScroll>Workshops</a></li>
+            <li><a href=index.html#blog class=smoothscroll>Glimpses</a></li>
+            <li ><a href=team.html target=_self> Team</a></li>
+            <li class="active"><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
+            <li class=dropdown>
+               <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+               <ul class=dropdown-menu>
+                  <li><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
+                  <li><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                  <li><a href=feedbackEntrench.php target=_selfk>Entrench Electronics Workshop</a></li>
+               </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="./index.html#home" class="smoothScroll"> Home
-            </a>
-          </li>
-          <li>
-            <a href="./index.html#about" class="smoothScroll"> About
-            </a>
-          </li>
-          <li>
-            <a href="./index.html#services" class="smoothScroll"> Hospitality
-            </a>
-          </li>
+    </nav>
 
-      <li>
-            <a href="./index.html#Portfolio" class="smoothScroll"> Events
-            </a>
-          </li>
-          <li>
-            <a href="./index.html#workshop" class="smoothScroll" >Workshops
-            </a>
-          </li>
-          <li>
-            <a href="./Sponsors.html" target="_self" >Previous Sponsors
-            </a>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Feedback
-              <span class="caret">
-              </span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="./feedbackElan.php" target="_blank">Elan Workshop
-                </a>
-              </li>
-              <li>
-                <a href="./feedbackAzure.php" target="_blank">Azure Skynet Workshop
-                </a>
-              </li>
-              <li>
-                <a href="./feedbackEntrench.php" target="_blank">Entrench Electronics Workshop
-                </a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="">
-    <br><br>
-  </div>
-<div class="back_cover">
 <div class="container">
-  <h1 style="font-family: &#39;maleficent&#39;;font-size:400%">SPONSORS</h1>
+  <h1 style="font-family: &#39;maleficent&#39;;font-size:400%" >SPONSORS</h1>
   <h3>PROUDLY PRESENTING OUR SPONSORS</h3>
   <div class="row">
   <div class="col-xs-12 col-sm-4 col-sm-offset-4">
@@ -352,7 +363,7 @@ img:not(#logo) {
   </div>
 
 
-  <h3>FOOD AND BEVERAGES PARTNERS</h3>
+  <h3 id="food">FOOD AND BEVERAGES PARTNERS</h3>
    <div class="row">
 
     <div class="col-xs-12 col-sm-4"><a href="http://www.dominos.com/" target="_blank"><img src="./Sponsors_files/domino.jpg" alt="Domino"></a></div>
@@ -378,7 +389,7 @@ img:not(#logo) {
   <div class="col-xs-12 col-sm-4"><h3>MEDIA PARTNER</h3><a href="http://www.allevents.in/" target="_blank"><img src="./Sponsors_files/allevents.jpg" alt="Dare2Compete"></a></div>
   <div class="col-xs-12 col-sm-4"><h3>QUIZ PARTNER</h3><a href="http://tradeandbeyond.com/" target="_blank"><img src="./Sponsors_files/tradeandbeyond.png" alt="Trade and Beyond"></a></div>
   </div>
-   <h3>ONLINE MEDIA PARTNERS</h3>
+   <h3 id="online">ONLINE MEDIA PARTNERS</h3>
   <div class="row">
   <div class="col-xs-12 col-sm-4"><a href="http://www.tnews.media/" target="_blank"><img src="./Sponsors_files/tnews.jpg" alt="T News"></a></div>
   <div class="col-xs-12 col-sm-4"><a href="http://www.brainbuxa.com/" target="_blank"><img src="./Sponsors_files/brainbuxa.jpg" alt="Brain Buxa"></a></div>

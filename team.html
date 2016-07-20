@@ -2,59 +2,11 @@
 <html lang="en">
   <head>
     <style>
-      div.blog h1{
-        color: black;
-      }
-      div.galler h2{
-        color: #333;
-      }
-      div.blog h2{
-        color: black;
-      }
-      div.events{
-        background-color: #81cfe0;
-        font-family: 'Josefin Sans', sans-serif;
-        background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-      }
-      div.hospi{
-        background-color: #fde3a7;
-        background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
-        text-align: center;
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-      }
-      div.hospi h1{
-        color: #333;
-      }
-      div.hospi h2{
-        color: #333;
-      }
       div.team1{
         background-color: #336E7B;
         color: white;
         background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-      }
-      div.about_us{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 20px;
-        word-spacing: 15px;
-        letter-spacing: 2px;
-      }
-      div.back_about{
-        background-color: #00ccb1;
-        background-image: url("http://www.transparenttextures.com/patterns/ag-square.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-        background-repeat: no-repeat;
-      }
-      div.about_us2{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 20px;
-        word-spacing: 10px;
-        letter-spacing: 3px;
-      }
-      div.blog{
-        background-color: #99ffeb;
       }
     </style>
     <meta charset="utf-8">
@@ -83,77 +35,47 @@
 
   </head>
   <body data-spy="scroll" data-target="#myNavbar" data-offset="70">
-
-
+    <div class="team1">
     <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse" id="icon123">
+            <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;float:right;">
             </span>
           </button>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav">
-            <li>
-              <a href="./index.html#home" class="smoothScroll"> Home
-              </a>
+            <li><a href=index.html class=smoothScroll> Home</a></li>
+            <li><a href=index.html#about class=smoothScroll> About</a></li>
+            <li><a href=index.html#services class=smoothScroll> Hospitality</a></li>
+            <li><a href=index.html#Portfolio class=smoothScroll> Events</a></li>
+            <li><a href=index.html#workshop class=smoothScroll>Workshops</a></li>
+            <li><a href=index.html#blog class=smoothscroll>Glimpses</a></li>
+            <li class="active"><a href=team.html target=_self> Team</a></li>
+            <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
+            <li class=dropdown>
+               <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+               <ul class=dropdown-menu>
+                  <li><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
+                  <li><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                  <li><a href=feedbackEntrench.php target=_selfk>Entrench Electronics Workshop</a></li>
+               </ul>
             </li>
-            <li>
-              <a href="./index.html#about" class="smoothScroll"> About
-              </a>
-            </li>
-            <li>
-              <a href="./index.html#services" class="smoothScroll"> Hospitality
-              </a>
-            </li>
-
-        <li>
-              <a href="./index.html#Portfolio" class="smoothScroll"> Events
-              </a>
-            </li>
-            <li>
-              <a href="./index.html#workshop" class="smoothScroll" >Workshops
-              </a>
-            </li>
-            <li>
-              <a href="./Sponsors.html" target="_self" >Previous Sponsors
-              </a>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Feedback
-                <span class="caret">
-                </span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="./feedbackElan.php" target="_blank">Elan Workshop
-                  </a>
-                </li>
-                <li>
-                  <a href="./feedbackAzure.php" target="_blank">Azure Skynet Workshop
-                  </a>
-                </li>
-                <li>
-                  <a href="./feedbackEntrench.php" target="_blank">Entrench Electronics Workshop
-                  </a>
-                </li>
-              </ul>
-            </li>
-
           </ul>
         </div>
       </div>
     </nav>
+    <nav class="navbar navbar-default ">
+  </nav>
 
     <!-- Hospitality back ground -->
     <!-- ==== TEAM MEMBERS ==== -->
-    <div class="team1">
       <div class="container" id="team" name="team">
-        <br>
-        <div class="row white centered">
+         <div class="row white centered">
           <h1 class="centered">MEET OUR AWESOME TEAM
           </h1>
           <hr>
