@@ -173,7 +173,7 @@
          <strong>
          Thank You For Your Valuable Feedback.
          <br><br>
-         <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
+         <a href="./" style="color: #916D3B;" >Go Back To Home Page</a>
          </strong>
        </div>';
        else
@@ -181,7 +181,7 @@
          <strong>
          Some Error Occured While Sending Feedback.
          <br><br>
-         <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
+         <a href="./" style="color: #916D3B;" >Go Back To Home Page</a>
          </strong>
        </div>';
 
@@ -226,16 +226,17 @@
                <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;float:right;">
                </span>
                </button>
+               <a href=./  class="navbar-brand smoothScroll"  >ELAN 2017</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                <ul class="nav navbar-nav">
-                  <li><a href=index.html class=smoothScroll> Home</a></li>
-                  <li><a href=index.html#about class=smoothScroll> About</a></li>
-                  <li><a href=index.html#services class=smoothScroll> Hospitality</a></li>
-                  <li><a href=index.html#Portfolio class=smoothScroll> Events</a></li>
-                  <li><a href=index.html#workshop class=smoothScroll>Workshops</a></li>
-                  <li><a href=index.html#blog class=smoothscroll>Glimpses</a></li>
+                   <li><a href=./#about class=smoothScroll> About</a></li>
+                  <li><a href=./#services class=smoothScroll> Hospitality</a></li>
+                  <li><a href=./#Portfolio class=smoothScroll> Events</a></li>
+                  <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
+                  <li><a href=./#blog class=smoothscroll>Glimpses</a></li>
                   <li><a href=team.html target=_self> Team</a></li>
                   <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
                   <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>

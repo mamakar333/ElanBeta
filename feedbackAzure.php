@@ -162,7 +162,7 @@
          <strong>
          Thank You For Your Valuable Feedback.
          <br><br>
-         <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
+         <a href="./" style="color: #916D3B;" >Go Back To Home Page</a>
          </strong>
        </div>';
        else
@@ -170,7 +170,7 @@
          <strong>
          Some Error Occured While Sending Feedback.
          <br><br>
-         <a href="./index.html" style="color: #916D3B;" >Go Back To Home Page</a>
+         <a href="./" style="color: #916D3B;" >Go Back To Home Page</a>
          </strong>
        </div>';
 
@@ -207,39 +207,36 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-      <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse" id="icon123">
-               <span class="glyphicon glyphicon-stats" style="font-size:30px; color:#C0C0C0;float:right;">
-               </span>
-               </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="nav navbar-nav">
-                  <li><a href=index.html class=smoothScroll> Home</a></li>
-                  <li><a href=index.html#about class=smoothScroll> About</a></li>
-                  <li><a href=index.html#services class=smoothScroll> Hospitality</a></li>
-                  <li><a href=index.html#Portfolio class=smoothScroll> Events</a></li>
-                  <li><a href=index.html#workshop class=smoothScroll>Workshops</a></li>
-                  <li><a href=index.html#blog class=smoothscroll>Glimpses</a></li>
-                  <li><a href=team.html target=_self> Team</a></li>
-                  <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
-                  <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
-                  <li class="dropdown active">
-                     <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
-                     <ul class=dropdown-menu>
-                        <li><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
-                        <li class="active"><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
-                        <li><a href=feedbackEntrench.php target=_self>Entrench Electronics Workshop</a></li>
-                     </ul>
-                  </li>
+<nav id=myNavbar class="navbar navbar-inverse navbar-fixed-top" role=navigation>
+   <div class=container>
+      <div class=navbar-header>
+        <button type=button class=navbar-toggle data-toggle=collapse data-target=#navbarCollapse>
+          <span class="glyphicon glyphicon-stats" style=font-size:30px;color:#c0c0c0></span>
+        </button>
+        <a href=./  class="navbar-brand smoothScroll"  >ELAN 2017</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="nav navbar-nav">
+             <li><a href=./#about class=smoothScroll> About</a></li>
+            <li><a href=./#services class=smoothScroll> Hospitality</a></li>
+            <li><a href=./#Portfolio class=smoothScroll> Events</a></li>
+            <li><a href=./#workshop class=smoothScroll>Workshops</a></li>
+            <li><a href=./#blog class=smoothscroll>Glimpses</a></li>
+            <li><a href=team.html target=_self> Team</a></li>
+            <li><a href=Sponsors.html target=_self>Previous Sponsors</a></li>
+            <li ><a href=campusAmbassador.html target=_self>Campus Ambassador</a></li>
+            <li class="dropdown active">
+               <a class=dropdown-toggle data-toggle=dropdown href=#>Feedback<span class=caret></span></a>
+               <ul class=dropdown-menu>
+                  <li class="active"><a href=feedbackElan.php target=_self>Elan Workshop</a></li>
+                  <li ><a href=feedbackAzure.php target=_self>Azure Skynet Workshop</a></li>
+                  <li><a href=feedbackEntrench.php target=_self>Entrench Electronics Workshop</a></li>
                </ul>
-            </div>
-         </div>
-      </nav>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
       <nav class="navbar navbar-default "></nav>
       <br>
       <table class="table" width="300">

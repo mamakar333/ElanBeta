@@ -133,7 +133,7 @@ background-color: #aaa;
 }
 @font-face{font-family:RalewayMedium;src:url('../fonts/Raleway-Medium.ttf');}
 
-@media (max-width:992px){
+@media (max-width:1100px){
 .navbar-header {
     float: none;
 }
